@@ -1,0 +1,67 @@
+
+.hero-img{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+}
+
+.hero-img::before{
+    content: "";
+    
+    background: url("https://img.freepik.com/photos-gratuite/collage-arriere-plan-programmation_23-2149901770.jpg?ga=GA1.1.1041549040.1725707744&semt=ais_hybrid" );
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: change 10s infinite ease-in-out;
+    clip-path: url(#clip1);
+
+}
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-img p{
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 641px) {
+    .hero-img h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+@keyframes change{
+    20%{
+        background-image: url("https://img.freepik.com/photos-premium/fond-technologie-abstrait-code-programmation-developpeur-logiciels-script-informatique_34663-31.jpg?ga=GA1.1.1041549040.1725707744&semt=ais_hybrid");
+        
+
+    }
+    60%{
+        background-image: url("https://img.freepik.com/photos-premium/developpeur-tapant-du-code-ordinateur-portable-dans-environnement-bureau-domicile-dynamique-axe-technologie_1247856-18041.jpg?ga=GA1.1.1041549040.1725707744&semt=ais_hybrid");
+
+    }
+
+    90%{
+        background-image: url("https://img.freepik.com/photos-premium/programmeur-entre-mains-ordinateur-portable-train-taper-code-fond-couleur-neon_1187703-178172.jpg?ga=GA1.1.1041549040.1725707744&semt=ais_hybrid");
+
+    }
+}

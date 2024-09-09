@@ -1,0 +1,29 @@
+label{
+    color: rgb(241, 172, 229);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+form input , form textarea {
+margin-bottom: 1rem;
+margin-top: 0.7rem;
+padding: 10px 17px;
+font-size: 1.2rem;
+border: 2px solid rgb(70, 70, 69);
+background-color: transparent;
+color: aliceblue;
+box-shadow: 2px  3px 5px rgba(123, 122, 122, 0.8);
+
+}
+
+button{
+    margin-top: 1rem;
+}
